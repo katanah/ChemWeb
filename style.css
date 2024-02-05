@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.main-navbar {
+  height: 4em;
+  background-color: black;
+  color: white;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  margin: 20px;
+}
+
+.item a {
+  font: 24px "Poppins", Sans-serif;
+  padding: 0 5em;
+  letter-spacing: 0.25px;
+}
+
+.item a:hover {
+  color: #3e8989;
+}
+
+.item a:hover:after {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.item a:after {
+  content: "";
+  position: absolute;
+  background-color: #ffdb58;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SMPLFY</title>
+    <title>Inventory</title>
 
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,7 +20,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body >
+  <body data-barba="wrapper">
+    <div class="transition"></div>
+
+    <div class="wrapper">
       <!--navbar-->
       <div class="navbar">
         <nav>
@@ -32,8 +35,15 @@
           </ul>
         </nav>
       </div>
+    </div>
+
+    <main data-barba="container" data-barba-namespace="inventory" class="container">
+        <H1>Inventory</H1>
+    </main>
 
     <!--Javascript Files-->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     <script src="./script.js"></script>
   </body>
 </html>
