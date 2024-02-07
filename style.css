@@ -1,7 +1,9 @@
+/* General Styling Rules */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background: #fafef4;
 }
 
 a {
@@ -13,28 +15,31 @@ a:visited {
   color: inherit;
 }
 
-.main-navbar {
+/* Navbar Style */
+.main-navbar,
+.alt-navbar {
   height: 4em;
-  background-color: black;
-  color: white;
+  color: #000;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.main-navbar{
+   min-height: 75em;
+}
+
 .item {
-  margin: 20px;
+  margin: 5em;
 }
 
 .item a {
-  font: 24px "Poppins", Sans-serif;
-  padding: 0 5em;
-  letter-spacing: 0.25px;
+  font: 500 24px "Poppins", Sans-serif ;
 }
 
 .item a:hover {
-  color: #3e8989;
+  color: #000;
 }
 
 .item a:hover:after {
@@ -45,7 +50,7 @@ a:visited {
 .item a:after {
   content: "";
   position: absolute;
-  background-color: #ffdb58;
+  background-color: #000;
   height: 3px;
   width: 0%;
   left: 0;
